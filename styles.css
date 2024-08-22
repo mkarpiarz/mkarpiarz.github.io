@@ -1,0 +1,485 @@
+html
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	height: 100%;
+}
+
+body
+{
+	padding: 2%;
+	height: 100%;
+	/* background: url(images/background_top.png) repeat-x left top; */
+	/* background: #F0F8FF; */
+	background: #FFFFFF;
+	height: 100%;
+}
+
+a
+{
+	text-decoration: none;
+	color: #000000;
+}
+
+p.error
+{
+	font-size: medium;
+	color: red;
+	font-weight: bold;
+}
+
+div.error
+{
+	border: 2px solid red;
+}
+
+p.warning
+{
+	font-size: medium;
+	color: orange;
+	font-weight: bold;
+}
+
+img
+{
+	margin: 4px;
+}
+
+#page
+{
+	width: 76%;
+	margin: 0 auto;
+	min-width: 250px;
+}
+
+header
+{
+	width: 96%;
+	height: 150px;
+	background: url(./images/top.png);
+	background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	padding: 0 2% 0 2%;
+}
+
+header h1
+{
+	color: #0185d2;
+	font-size: 52px;
+	margin: 0 auto;
+	font-weight: bold;
+	text-shadow: 0.05em 0.05em 0.1em gray;
+	letter-spacing: 6px;
+}
+
+header h2
+{
+	color: #0185d2;
+	font-size: 40px;
+	margin: 0 auto;
+	margin-bottom: -15px;
+	font-weight: bold;
+	text-shadow: 0.1em 0.1em 0.1em gray;
+	letter-spacing: 4px;
+}
+
+header h3
+{
+	color: #FFFFFF;
+	font-size: 25px;
+	margin: 0 auto;
+	padding: auto;
+	letter-spacing: 3px;
+}
+
+header img
+{
+	height: 12px;
+	padding: auto;
+}
+
+header div#logo
+{
+	color: white;
+	font-size: 20px;
+	text-decoration: underline overline;
+	padding: 0px;
+	margin: 0px 10px 0px 10px;
+	float: right;
+}
+
+header div#flags
+{
+	float: left;
+}
+
+#container
+{
+	/*min-height: 800px;
+	height: auto !important;
+	height: 800px;*/
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding: 0px;
+	/*overflow: visible; */
+	overflow: visible;
+	border: 1px solid #0185d2;
+}
+
+#left_menu
+{
+	position: relative;
+	float: left;
+	width: 20%;
+	height: 100%;
+	padding: 1% 0 0 0;
+	background: #0185d2;
+	color: #FFFFFF;
+	min-width: 100px;
+	overflow: visible;
+	display: block;
+}
+
+#left_menu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#left_menu li
+{
+	display: block;
+	margin-bottom: 5px;
+	padding: 0px 0 5px 10px;
+	font-size: 16px;
+}
+
+#left_menu h2
+{
+	font-size: 26px;
+	padding: 0px 5px;
+	margin: 0 auto;
+}
+
+#left_menu a
+{
+	color: #FFFFFF;
+}
+
+#left_menu a:hover
+{
+	color: #0000CC;
+	background: #FFFFFF;
+	font-weight: bold;
+}
+
+#left_menu hr
+{
+	border: 2px solid white;
+}
+
+#main {
+	width: 75%;
+	float: left;
+	position: relative 25%;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 20%;
+	min-height: 200px;
+	height: auto !important;
+	height: 200px;
+	/*height: auto;*/
+	text-align: justify;
+	padding: 6px;
+	background: #FFFFFF;
+	overflow: visible;
+	overflow-x: visible;
+	/*overflow: auto;*/
+	min-width: 200px;
+}
+
+.post
+{
+	border: 1px dashed #0185d2;
+	border-top: 0px;
+	position: relative;
+	background: white;
+	overflow: visible;
+	width: 100%; /* Force hasLayout in IE */
+}
+
+.post span.titlebar
+{
+	color: white;
+	background: #0185d2;
+	font-size: 20px;
+	font-weight: bold;
+	display: block;
+	padding: 4px;
+}
+
+.post span.infobar
+{
+	font-size: 14px;
+	border-bottom: 1px solid black;
+	display: block;
+	padding: 3px;
+}
+
+.post div.content
+{
+	position: relative;
+	margin: 5px;
+	text-indent: 1.5em;
+}
+
+.content img
+{
+	display: inline;
+	position: relative;
+}
+
+.content img.photo
+{
+	float: left;
+	width: 20%;
+	clear: right;
+	max-width: 200px;
+}
+
+.content img.contact
+{
+	width: 180px;
+	/*width: 70%*/
+}
+
+.content a
+{
+	font-weight: bold;
+	background: #EEEEEE;
+}
+
+.content a:hover
+{
+	color: blue;
+}
+
+.content h3
+{
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+.content table, th, td
+{
+	padding: 2px;
+	border: 2px solid black;
+	border-collapse: collapse;
+	vertical-align: top;
+	word-break: break-word;
+}
+
+.content th
+{
+	text-align: center;
+	background-color: #C8C8C8;
+}
+
+.content textarea
+{
+    border: 1px solid #999999;
+    width: 80%;
+    margin: 5px 0;
+    padding: 3px;
+}
+
+.content div.textareacontainer
+{
+    padding-right: 8px; /* 1 + 3 + 3 + 1 */
+}
+
+.content ul
+{
+	list-style: inside;
+	margin-left: 0;
+	text-indent: -1em;
+}
+
+.content ol
+{
+	margin-left: 0;
+	text-indent: -1em;
+}
+
+.content li
+{
+	/*list-style: inside;*/
+	padding-left: 1em;
+}
+
+.content ul.shifted
+{
+	list-style: inside;
+	margin-left: 0;
+	text-indent: 1em;
+}
+
+.post span.tagbar
+{
+	color: white;
+	background: #0185d2;
+	font-size: 10px;
+	display: block;
+	padding: 3px;
+}
+
+footer
+{
+	clear: both;
+	text-align: center;
+	height: 20px;
+	margin: 0px auto;
+	padding: 4px 0px;
+	color: #FFFFFF;
+	background: #0185d2;
+}
+
+.shadow
+{
+	-moz-box-shadow:    5px 6px 3px 3px #ccc;
+	-webkit-box-shadow: 5px 6px 3px 3px #ccc;
+	box-shadow:         5px 6px 3px 3px #ccc;
+	margin: 5px;
+	margin-bottom: 12px;
+}
+
+.clear
+{
+	clear: both;
+}
+
+@media screen and (max-width:800px)
+{
+	#left_menu
+	{
+		width: 100%;
+	}
+	.content textarea
+	{
+		width: 90%;
+	}
+	#main
+	{
+		width: 96%;
+		position: relative 1%;
+		float: left;
+	}
+	header
+	{
+		height: 160px;
+	}
+	header div#flags
+	{
+		width: 100%;
+		/*position: relative;
+		display: inline;*/
+		padding: auto;
+		margin: 3px 0px 3px 0px;
+	}
+	header div#logo
+	{
+		display: none;
+		/*padding: auto;
+		margin: 5px 0px 5px 0px;
+		width: 30%;*/
+	}
+	#left_menu li
+	{
+		font-size: 1.3em;
+	}
+	header h1
+	{
+		font-size: 45px;
+		margin: 10px auto;
+	}
+	.content img.foto
+	{
+		min-width: 80px;
+	}
+
+	/* http://elvery.net/demo/responsive-tables/ */
+	/* Force table to not be like tables anymore */
+	#no-more-tables table,
+	#no-more-tables thead,
+	#no-more-tables tbody,
+	/*#no-more-tables th, */
+	#no-more-tables td,
+	#no-more-tables tr {
+		display: block;
+	}
+
+	/*
+	#no-more-tables table,
+	#no-more-tables th,
+	#no-more-tables td
+	{
+		padding: 2px;
+		border: 2px solid black;
+		border-collapse: collapse;
+		vertical-align: top;
+		word-break: break-word;
+	}
+
+	#no-more-tables th
+	{
+		display: block;
+		text-align: center;
+		background-color: #C8C8C8;
+	}*/
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#no-more-tables thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	#no-more-tables tr
+	{
+		border: 1px solid black;
+	}
+
+	#no-more-tables td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+		white-space: normal;
+		text-align:left;
+	}
+
+	#no-more-tables td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+
+	/*
+	Label the data
+	*/
+	#no-more-tables td:before { content: attr(data-title); }
+
+}
